@@ -1,0 +1,293 @@
+@font-face{
+    font-family:Vazir;
+    src:url('./../../../asset/fonts/Vazir.woff');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    direction: rtl;
+    font-family: Vazirmatn;
+}
+
+h1 {
+    font-size: 50px;
+    color: #222222;
+    line-height: 60px;
+}
+
+.padding-base {
+    padding: 20px ;
+}
+
+h2 {
+    font-size: 45px;
+    color: #222222;
+    line-height: 50px;
+}
+
+h4 {
+    font-size: 20px;
+    color: #222222;
+}
+
+h6 {
+    font-size: 13px;
+    font-weight: 500;
+    color: #222222;
+}
+
+p{
+    font-size: 16px;
+    color: #465b52;
+}
+
+a{
+    outline: none;
+    text-decoration: none;
+    color: #222222;
+}
+
+body{
+    width: 100%;
+    position: relative;
+}
+
+#hero{
+    background-size: cover;
+    background-image: url('./../../../default/tablet-2.jpeg');
+    background-position: center 50%;
+    /* width: 100%; */
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+
+.refundForm2{
+    display: none;
+}
+
+.homePage{
+    position: relative;
+}
+
+.buttonsFirstPage {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position:absolute;
+    bottom:7px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* .buttons{
+    position: absolute;
+    bottom: 2vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.button{
+    padding: 0.5em 1em;
+    background-color: rgb(18 175 56);
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    width: 50%;
+    margin-bottom: 10px;
+    text-align: center;
+    border-radius: 10px;
+} */
+
+/* .buyForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin-right: 40px;
+    margin-left: 40px;
+} */
+
+
+/* #shows{
+    width: 100%;
+    padding: 1em 1em;
+    border-radius: 10px;
+    border: 1px solid rgb(157, 156, 248);
+    outline: none;
+} */
+
+.count {
+    flex: 0 0 40%;
+    max-width: 40%;
+}
+
+/* .ticketCount{
+    padding: 0.5em 0.1em;
+    width: 30%;
+    border-radius: 10px;
+    border: 1px solid rgb(157, 156, 248);
+    outline: none;
+} */
+
+.label{
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* .showNights{
+    width: 100%;
+    margin-top: 3em;
+    margin-bottom: 2em;
+} */
+
+/* .buyOptions {
+    margin-bottom: 2em;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+} */
+
+/* .phoneNumber{
+    width: 100%;
+} */
+
+/* .username {
+    width: 100%;
+} */
+
+/* .mobileInput{
+    width: 100%;
+    margin-bottom: 2em;
+    padding: 1em 1em;
+    border-radius: 10px;
+    border: 1px solid rgb(157, 156, 248);
+} */
+
+.priceTag {
+    max-width: 50%;
+    flex: 0 0 50%;
+}
+
+.homeBuButton{
+    padding: 0.5em 1em;
+    background-color: rgb(18 175 56);
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    outline: none;
+    width: 50%;
+    margin-bottom: 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+/* .buyButton {
+    width: 100%;
+    border: 1px solid transparent;
+} */
+
+/* .theaterDescription {
+    width: 100%;
+    background-color: rgb(105, 235, 100);
+    color: #222222;
+    border-radius: 10px;
+    padding: 1em 2em;
+    margin-bottom: 2em;
+    display: none;
+    flex-direction: column;
+} */
+.theaterDescription{
+    animation: fadeIn 0.5;
+    display: none !important;
+}
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+.successTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.successHeader {
+    margin-top: 3em !important;
+    text-align: center;
+    color: rgb(108, 240, 104) ;
+    margin-bottom: 1em;
+}
+
+.userData {
+    display: flex;
+    margin-top: 2em !important;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.userCol{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.userDataTitle{
+    margin-bottom: 10px;
+}
+
+.userCode {
+    margin-top: 2em !important;
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.userCode::after{
+    content: "";
+    width: 100px;
+    background-color:  rgb(108, 240, 104);
+    height: 3px;
+    position: absolute;
+    bottom: -10px;
+    left: 35%;
+}
+
+.theaterAddress {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+}
+
+.address {
+    margin-top: 2em !important;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.qrCode {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* @media(min-width:490px){
+    #hero{
+        height: auto;
+    }
+} */
+
+@media(max-width:378px) {
+    .homeBuButton{
+        width: 80%;
+    }    
+}
