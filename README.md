@@ -6,4 +6,4 @@ complete sell ticket and refund it with admin panel and qr-code scanner
 1) restful api and routing system is updated .
 2) handeling every common queries using in mysql with generator class.
 3) try to implement SOLID rules and some common design patterns better.
-4) added mongodb connections besides mysql 
+4) added mongodb connections besides mysql (Attention : if you do not have right configurations for mongo on your machine, please remove mongo line from composer.json)
