@@ -1,9 +1,6 @@
 <?php
 
 use App\Core\System;
-use App\Core\Tools;
-use App\Model\Arrays;
-use App\Model\Form;
 
 require_once 'top.php' ?>
 <div class="container" id="hero">

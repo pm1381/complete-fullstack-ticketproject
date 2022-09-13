@@ -7,8 +7,6 @@ ini_set('display_errors', 1);
 
 // Require composer autoloader
 
-//define("DIR", __FILE__);
-
 define("DIR", "");
 
 date_default_timezone_set("Asia/Tehran");

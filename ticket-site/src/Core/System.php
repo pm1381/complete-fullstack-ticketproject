@@ -8,10 +8,6 @@ class System
 {
     public static function pageError($code, $message = "error 404 ! page not found")
     {
-        if (DEBUG) {
-            throw new Exception($message);
-        }
-
         http_response_code($code);
         $data['head']['title']       = $code;
         $data['head']['description'] = $code;
@@ -30,7 +26,7 @@ class System
 
     public static function instaAddress()
     {
-        return INSTAGRAM_ADDRESS;
+        return "";
     }
 
     public static function googleMapAddress()

@@ -3,7 +3,6 @@
 namespace App\Model\MongoModels;
 
 use App\Core\MongoGenerator;
-use App\Core\Tools;
 
 class User extends MongoGenerator
 {

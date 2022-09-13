@@ -1,8 +1,6 @@
 <?php
 namespace App\Model;
 
-use App\Core\Tools;
-
 class Form 
 {
 

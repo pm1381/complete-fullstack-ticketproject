@@ -1,7 +1,6 @@
 <?php
 
 use App\Core\System;
-use App\Core\Tools;
 
 ?>
 <!DOCTYPE html>

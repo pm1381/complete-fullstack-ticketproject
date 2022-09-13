@@ -4,8 +4,6 @@ namespace App\Core;
 
 use MongoDB\Client;
 
-//require_once 'Config.php';
-
 class Database
 {
     public static $connection;
@@ -14,12 +12,9 @@ class Database
     public function connectToMySql()
     {
         if (! self::$connection) {
-            // rava 
-            // username : ravathea_parham // password : 8v84&q1owa}h
-            // "mysql:host=" . 'localhost' . ";dbname=". 'ravathea_ghadir'
             // --------local
-            // "mysql:host=" . 'localhost' . ";dbname=". 'ghadir'
-            $dsn = "mysql:host=" . 'localhost' . ";dbname=". 'ghadir' . ";charset=UTF8";
+            // "mysql:host=" . 'localhost' . ";dbname=". ''
+            $dsn = "mysql:host=" . 'localhost' . ";dbname=". '' . ";charset=UTF8";
             try {
                 self::$connection = new \PDO($dsn, 'root', '');
             } catch (\PDOException $e) {
