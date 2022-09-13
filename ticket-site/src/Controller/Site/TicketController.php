@@ -3,7 +3,6 @@ namespace App\Controller\Site;
 
 use App\Controller\Refrence\SiteRefrenceController;
 use App\Core\System;
-use App\Core\Tools;
 use App\Model\User;
 
 class TicketController extends SiteRefrenceController
