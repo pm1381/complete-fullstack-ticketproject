@@ -52,5 +52,6 @@ class SiteRefrenceController extends Controller
     {
         parent::__construct();
         $this->data['adminSidebar'] = System::adminSidebar();
+        $this->data['currentPage'] = "";
     }
 }

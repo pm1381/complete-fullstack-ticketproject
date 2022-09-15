@@ -12,11 +12,15 @@ use App\Core\System;
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="<?php echo System::siteAddress() . "public/asset/css/site/style.css?v=1.1" ?>">
-    <link rel="stylesheet" href="<?php echo System::siteAddress() . "public/asset/css/admin/style.css?v=1.1" ?>">
+    <?php if ($this->data['currentPage'] != "siteHome") {?>
+        <link rel="stylesheet" href="<?php echo System::siteAddress() . "public/asset/css/admin/style.css?v=1.1" ?>">
+    <?php } ?>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"><link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-    <script src="<?php echo System::siteAddress() . 'public/asset/js/admin/action.js?v=1.4' ?>"></script>
+    <?php if ($this->data['currentPage'] != "siteHome") {?>
+        <script src="<?php echo System::siteAddress() . 'public/asset/js/admin/action.js?v=1.4' ?>"></script>
+    <?php } ?>
     <script src="<?php echo System::siteAddress() . 'public/asset/js/site/action.js?v=1.6' ?>"></script>
     <script src="<?php echo System::siteAddress() . 'public/asset/js/site/function.js' ?>"></script>
     <script src="<?php echo System::siteAddress() . 'public/asset/js/site/websocket.js' ?>"></script>

@@ -10,8 +10,9 @@ class HomeController extends SiteRefrenceController
     */
     public function home()
     {
-        $this->data['head']['title'] = 'گروه هنری روا';
-        $this->data['head']['description'] = 'اجرای گروه هنری روا به ماسبت عید غدیر';
+        $this->data['head']['title'] = 'گروه هنری ';
+        $this->data['head']['description'] = 'اجرای گروه هنری';
+        $this->data['currentPage'] = "siteHome";
 
         $this->render('site/home', $this->data);
     }
