@@ -18,6 +18,7 @@ class DashboardController extends SiteRefrenceController
         if (count($theaterResult)) {
             $this->data['theaterResult'] = $theaterResult;
         }
+        $this->data['currentPage'] = "adminPage";
         $this->render('admin/dashboard', $this->data);
     }
 

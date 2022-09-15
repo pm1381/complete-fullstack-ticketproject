@@ -12,11 +12,9 @@ class Database
     public function connectToMySql()
     {
         if (! self::$connection) {
-            // --------local
-            // "mysql:host=" . 'localhost' . ";dbname=". ''
-            $dsn = "mysql:host=" . 'localhost' . ";dbname=". '' . ";charset=UTF8";
+            $dsn = "mysql:host=" . 'localhost' . ";dbname=". DB_NAME . ";charset=UTF8";
             try {
-                self::$connection = new \PDO($dsn, 'root', '');
+                self::$connection = new \PDO($dsn, USERNAME, PASSWORD);
             } catch (\PDOException $e) {
                 echo $e->getMessage();
             }
