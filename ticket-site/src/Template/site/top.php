@@ -23,7 +23,7 @@ use App\Core\System;
     <?php } ?>
     <script src="<?php echo System::siteAddress() . 'public/asset/js/site/action.js?v=1.6' ?>"></script>
     <script src="<?php echo System::siteAddress() . 'public/asset/js/site/function.js' ?>"></script>
-    <script src="<?php echo System::siteAddress() . 'public/asset/js/site/websocket.js' ?>"></script>
+    <!-- <script src="<?php echo System::siteAddress() . 'public/asset/js/site/websocket.js' ?>"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
 </head>

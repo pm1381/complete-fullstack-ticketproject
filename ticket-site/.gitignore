@@ -3,3 +3,4 @@ composer.lock
 *.zip
 *.rar
 .vscode
+.htaccess
