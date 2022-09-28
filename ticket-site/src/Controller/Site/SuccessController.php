@@ -104,7 +104,7 @@ class SuccessController extends SiteRefrenceController
     private function handleUserSms($userResult)
     {
         $sms = new Sms();
-        $smsResult = $sms->mobile($userResult['userMobile'])->userCode($userResult['userCode'])->send();
+        $smsResult = $sms->message(' گروه هنری روا تقدیم میکند \nبرای دریافت بارکد ورود به آدرس زیر مراجعه کنید \n')->mobile($userResult['userMobile'])->userCode($userResult['userCode'])->send();
         if ($smsResult['return']['status'] != 200) {
             $sms->submit();
         }

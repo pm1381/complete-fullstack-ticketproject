@@ -10,6 +10,7 @@ class Sms extends Generator
     protected $mobile;
     protected $code;
     protected $resultStatus = '';
+    protected $messgae;
 
     public function __construct()
     {
@@ -20,6 +21,12 @@ class Sms extends Generator
     public function mobile($value)
     {
         $this->mobile = $value;
+        return $this;
+    }
+
+    public function message($message)
+    {
+        $this->messgae = $message;
         return $this;
     }
 
@@ -43,10 +50,7 @@ class Sms extends Generator
 
     public function send()
     {
-        $message = " گروه هنری روا تقدیم میکند \n";
-        $message .= "برای دریافت بارکد ورود به آدرس زیر مراجعه کنید \n";
-        $message .= System::siteAddress() ."ticket/" . $this->code;
-        $encodedMessage = urlencode($message);
+        $encodedMessage = urlencode($this->messgae);
 
         $url = 'https://api.kavenegar.com/v1/6F6D344D356157502B686F326D5965796537705974777335783272794931386964666F43674F496F7172733D/sms/send.json?receptor=' . $this->mobile . '&sender=10004440044004&message=' . $encodedMessage;
 

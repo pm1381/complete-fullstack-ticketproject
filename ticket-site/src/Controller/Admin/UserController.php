@@ -54,7 +54,7 @@ class UserController extends SiteRefrenceController
             ->where(['userId' => $id])->limit(1)->select();
 
         $sms = new Sms();
-        $smsResult = $sms->mobile($userResult['userMobile'])
+        $smsResult = $sms->message(' گروه هنری روا تقدیم میکند \nبرای دریافت بارکد ورود به آدرس زیر مراجعه کنید \n')->mobile($userResult['userMobile'])
             ->userCode($userResult['userCode'])->send();
 
         $this->data['haveAlert'] = true;
